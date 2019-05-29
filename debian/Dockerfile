@@ -1,7 +1,7 @@
 FROM ubuntu AS build
 
 ENV DEBIAN_FRONTEND=noninteractive
-ARG REF=master
+ARG REF=z2.0.x
 
 RUN apt-get update && \
   apt-get upgrade -y && \
