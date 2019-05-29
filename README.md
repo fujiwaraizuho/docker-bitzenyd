@@ -3,11 +3,10 @@ Bitzenyd Docker Image
 
 # Image
 
-Repo: `onokatio/docker-bitzenyd:tag`
+Repo: `fujiwaraizuho/bitzenyd:tag`
 Tag:
 
-- `alpine` - Alpine Linux version (fast and light)
-- `debian` - Debian version
+- `latest` - Debian latest version
 
 ! now work to host docker image on Organizaion.
 
@@ -31,5 +30,5 @@ server=1
 3. Run docker container with volume option
 
 ```
-docker run --name bitzenyd -d -v ./bitzeny-data:/root/.bitzeny -p 9252:9252 --network host nao20010128nao/docker-bitzenyd:alpine
+docker run --name bitzenyd -d -v bitzeny-data:/root/.bitzeny -p 9252:9252 fujiwaraizuho/bitzenyd:latest
 ```
